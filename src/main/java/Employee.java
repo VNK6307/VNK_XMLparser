@@ -5,7 +5,12 @@ public class Employee {
     public String country;
     public int age;
 
-    public Employee() {
+    public Employee(long id, String firstName, String lastName, String country, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.country = country;
+        this.age = age;
     }
 
     public long getId() {
@@ -50,7 +55,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "\nEmployee\n {\n" +
+        return "Employee\n {\n" +
                 "\tid = " + id +
                 ",\n\tfirstName = " + firstName +
                 ",\n\tlastName = " + lastName +
